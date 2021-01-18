@@ -6,13 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/buttonJoinMeeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="@dimen/zm_dialog_margin_16dp"
+        android:layout_marginBottom="@dimen/zm_dialog_margin_16dp"
+        android:enabled="false"
+        android:minWidth="250dp"
+        android:onClick="onClickJoinMeeting"
+        android:text="Join Meeting"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartMeeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewViewPortPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/zm_width_50dp"
+            android:layout_marginBottom="@dimen/zm_width_50dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/zm_dialog_margin_16dp"
+                android:layout_marginBottom="@dimen/zm_dialog_margin_16dp"
+                android:gravity="center"
+                android:text="Zoom can access this permissions later!" />
+
+            <CheckBox
+                android:id="@+id/checkedTextViewCamera"
+                style="@style/TextAppearance.MaterialComponents.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/text_camera_permission" />
+
+            <CheckBox
+                android:id="@+id/checkedTextViewAudio"
+                style="@style/TextAppearance.MaterialComponents.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/text_audio_permission" />
+
+            <CheckBox
+                android:id="@+id/checkedTextViewReadStorage"
+                style="@style/TextAppearance.MaterialComponents.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/text_gallery_permission" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonStartMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zm_dialog_margin_16dp"
+        android:layout_marginBottom="@dimen/zm_dialog_margin_16dp"
+        android:enabled="false"
+        android:minWidth="250dp"
+        android:onClick="onClickStartMeeting"
+        android:text="Start Meeting"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewViewPortPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

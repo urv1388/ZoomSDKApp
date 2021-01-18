@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ZoomSDKApp</string>
+
+    <string name="text_camera_permission">Camera Permission</string>
+    <string name="text_audio_permission">Audio Permission</string>
+    <string name="text_gallery_permission">Gallery Permission</string>
 </resources>
