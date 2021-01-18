@@ -1,2 +1,3 @@
+include ':mobilertc',':commonlib'
 include ':app'
 rootProject.name = "ZoomSDKApp"
