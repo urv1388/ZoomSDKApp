@@ -25,6 +25,7 @@ Generate your SDK Key & Secret
 
 Create an SDK app
 
+![Screen](../master/screenshots/zoomcred.jpeg)
 
 Continue and Copy App Credentials -  *SDK Key*    and     *SDK Secret* 
 
@@ -72,3 +73,10 @@ The Zoom Instant SDK requires the following permissions. Ensure that your app ma
  
 # That’s It!
 
+## Screenshots
+
+<img src="../master/screenshots/Screenshot_20210118-163642_ZoomSDKApp.jpg" width="250"/>
+
+<img src="../master/screenshots/Screenshot_20210118-155920_ZoomSDKApp.jpg" width="250"/>
+
+<img src="../master/screenshots/Screenshot_20210118-163739_ZoomSDKApp.jpg" width="250"/>
