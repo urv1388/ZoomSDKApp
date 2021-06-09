@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tme.gerryconnect.app.staging",
+    "sha256_cert_fingerprints":
+    ["E0:A8:1D:EE:B7:2E:07:ED:B6:68:31:1B:5A:98:DE:78:50:AC:E6:64:BD:E9:6D:D8:C2:34:33:B0:BF:89:49:71"]
+  }
+}]
